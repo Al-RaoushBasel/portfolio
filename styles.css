@@ -231,3 +231,13 @@ body {
       gap: 0.8rem;
     }
   }
+
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 3px solid #58a6ff;
+  }
+  
