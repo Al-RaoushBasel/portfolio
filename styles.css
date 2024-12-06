@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #1f6feb;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #161b22, #0d1117);
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-content .highlight {
+    color: #58a6ff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .cta-buttons .btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #21262d;
+    border: 2px solid #58a6ff;
+    color: #58a6ff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .cta-buttons .btn:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+  }
+  
+  /* About Section */
+  .about {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #161b22;
+  }
+  
+  .about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+  
+  /* Skills Section */
+  .skills {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #0d1117;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill {
+    background-color: #21262d;
+    color: #58a6ff;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #58a6ff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .skill:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    transform: scale(1.1);
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 3rem 2rem;
+    background-color: #161b22;
+    text-align: center;
+  }
+  
+  .project {
+    background-color: #21262d;
+    border: 2px solid #58a6ff;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: left;
+    color: #c9d1d9;
+    transition: transform 0.3s;
+  }
+  
+  .project h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project p {
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    font-size: 1rem;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #0d1117;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    padding: 0.8rem;
+    border: 2px solid #58a6ff;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #161b22;
+    color: #c9d1d9;
+  }
+  
+  .contact form button {
+    background-color: #21262d;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .contact form button:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #161b22;
+  }
+  
+  footer p {
+    margin-bottom: 1rem;
+  }
+  
+  footer .socials a {
+    margin: 0 0.5rem;
+    color: #58a6ff;
+    font-size: 1.2rem;
+  }
+  
+  footer .socials a:hover {
+    color: #1f6feb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  }
