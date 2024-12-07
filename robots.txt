@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://al-raoushbasel.github.io/portfolio/sitemap.xml

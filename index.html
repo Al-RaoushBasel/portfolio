@@ -4,6 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basel Al-Raoush | Software Engineer Portfolio</title>
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Portfolio of Basel Al-Raoush, a passionate software engineer showcasing projects, skills, and achievements."
+    />
+    <meta
+      name="keywords"
+      content="Basel Al-Raoush,Al-Raoush Basel Eyad,Basel Al Raoosh,Basel Al Raoush,software engineer,Python,Java"
+    />
+
+    <meta
+      name="keywords"
+      lang="ar"
+      content="باسل الراعوش, باسل اياد, باسل إياد الراعوش, مهندس برمجيات, برمجة, تطوير تطبيقات, تطوير مواقع"
+    />
+
+    <meta name="author" content="Basel Al-Raoush" />
+
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://al-raoushbasel.github.io/portfolio/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Basel Al-Raoush | Software Engineer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Showcasing the projects and skills of Basel Al-Raoush, a passionate software engineer."
+    />
+    <meta
+      property="og:image"
+      content="https://al-raoushbasel.github.io/portfolio//assets/images/profile.jpeg"
+    />
+    <meta
+      property="og:url"
+      content="https://al-raoushbasel.github.io/portfolio/"
+    />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Basel Al-Raoush Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image:alt"
+      content="Profile picture of Basel Al-Raoush"
+    />
+
+    <meta name="revised" content="2024-12-07" />
+
+    <!-- Structured Data for Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Basel Al-Raoush",
+        "url": "https://al-raoushbasel.github.io/portfolio/",
+        "image": "https://al-raoushbasel.github.io/portfolio/assets/images/profile.jpeg",
+        "description": "Portfolio of Basel Al-Raoush, a passionate software engineer showcasing projects, skills, and achievements.",
+        "sameAs": [
+          "https://github.com/Al-RaoushBasel",
+          "https://linkedin.com/in/basel-al-raoush-72b002291"
+        ]
+      }
+    </script>
+
+    <!-- Styles and Fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -23,6 +97,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- Hero Section -->
     <section id="hero" class="hero">
@@ -208,7 +283,28 @@
       <p>© 2024 Basel Al-Raoush. All rights reserved.</p>
     </footer>
 
+    <button onclick="scrollToTop()" id="back-to-top" class="btn">
+      ↑ Back to Top
+    </button>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+      const backToTopButton = document.getElementById("back-to-top");
+      window.onscroll = () => {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
