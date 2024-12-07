@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   margin: 0;
   padding: 0;
   background-color: #0d1117;
@@ -19,7 +19,9 @@ a:hover {
   color: #1f6feb;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -48,6 +50,7 @@ h2 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -60,9 +63,11 @@ h2 {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -134,6 +139,7 @@ h2 {
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -313,7 +319,6 @@ footer .socials a:hover {
   }
 }
 
-
 /* Project Thumbnails */
 .project-thumbnail {
   width: 100%;
@@ -369,7 +374,8 @@ footer .socials a:hover {
 
 /* Gallery Container */
 .gallery {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 1rem;
@@ -397,7 +403,6 @@ footer .socials a:hover {
   text-align: center;
   margin-top: 1rem;
 }
-
 
 /* Modal Styling */
 .modal {
@@ -455,9 +460,3 @@ footer .socials a:hover {
     max-width: 200px;
   }
 }
-
-
-
-
-
-

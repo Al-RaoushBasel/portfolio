@@ -1,137 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basel Al-Raoush | Software Engineer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <img src="assets/images/profile.jpeg" alt="Basel Al-Raoush" class="profile-pic" />
-      <h1>Hi, I'm <span class="highlight">Basel Al-Raoush</span></h1>
-      <p>I build efficient and reliable software solutions for the future.</p>
-      <div class="cta-buttons">
-        <a href="#projects" class="btn"><i class="fas fa-code"></i> View Projects</a>
-        <a href="assets/resume.pdf" target="_blank" class="btn"><i class="fas fa-file-download"></i> Download Resume</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basel Al-Raoush | Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <img
+          src="assets/images/profile.jpeg"
+          alt="Basel Al-Raoush"
+          class="profile-pic"
+        />
+        <h1>Hi, I'm <span class="highlight">Basel Al-Raoush</span></h1>
+        <p>I build efficient and reliable software solutions for the future.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn"
+            ><i class="fas fa-code"></i> View Projects</a
+          >
+          <a href="assets/resume.pdf" target="_blank" class="btn"
+            ><i class="fas fa-file-download"></i> Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>
+        I'm a passionate software engineer with a strong foundation in
+        programming, problem-solving, and creating impactful solutions. I thrive
+        in building scalable systems and working on projects that make a
+        difference.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2><i class="fas fa-tools"></i> Skills</h2>
+      <div class="skills-container">
+        <div class="skill"><i class="fab fa-python"></i> Python</div>
+        <div class="skill"><i class="fab fa-java"></i> Java</div>
+        <div class="skill"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="skill"><i class="fab fa-react"></i> React</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+      <!-- MyBudgetTracker -->
+      <div class="project">
+        <h3><i class="fas fa-mobile-alt"></i> MyBudgetTracker</h3>
+        <p>
+          An Android application designed to help users track expenses across
+          various categories, analyze spending habits with visual charts, and
+          manage budgets efficiently.
+        </p>
+        <img
+          src="assets/images/budget-Tracker/SS1.png"
+          alt="MyBudgetTracker Screenshot"
+          class="project-thumbnail"
+        />
+        <button class="toggle-gallery-btn" data-project="budget-Tracker">
+          View Images
+        </button>
+      </div>
+
+      <!-- Pong Game -->
+      <div class="project">
+        <h3><i class="fas fa-gamepad"></i> Pong Game</h3>
+        <p>
+          A retro arcade game built with Python and Pygame, featuring fast-paced
+          paddle and ball mechanics, dynamic AI, and multiplayer support.
+        </p>
+        <img
+          src="assets/images/Pong/SS1.png"
+          alt="Pong Game Screenshot"
+          class="project-thumbnail"
+        />
+        <button class="toggle-gallery-btn" data-project="Pong">
+          View Images
+        </button>
+      </div>
+
+      <!-- To-Do Website -->
+      <div class="project">
+        <h3><i class="fas fa-list-alt"></i> To-Do Website</h3>
+        <p>
+          A simple and efficient task management website built using modern web
+          technologies. It allows users to add, edit, and delete tasks with an
+          interactive and responsive UI.
+        </p>
+        <img
+          src="assets/images/todo-website/SS1.png"
+          alt="To-Do Website Screenshot"
+          class="project-thumbnail"
+        />
+        <button class="toggle-gallery-btn" data-project="todo-website">
+          View Images
+        </button>
+      </div>
+
+      <!-- Pipes in the Desert -->
+      <div class="project">
+        <h3>
+          <i class="fas fa-project-diagram"></i> Pipes in the Desert (Java)
+        </h3>
+        <p>
+          Collaborated with a team to develop a strategic game in Java,
+          following the full Software Development Life Cycle (SDLC).
+        </p>
+        <img
+          src="assets/images/pipes-in-desert/SS1.png"
+          alt="Pipes in the Desert Screenshot"
+          class="project-thumbnail"
+        />
+        <button class="toggle-gallery-btn" data-project="pipes-in-desert">
+          View Images
+        </button>
+      </div>
+
+      <!-- OpenMetroMaps Contribution -->
+      <div class="project">
+        <h3>
+          <i class="fas fa-map-marker-alt"></i> OpenMetroMaps Contribution
+          (Java)
+        </h3>
+        <p>
+          Contributed to the OpenMetroMaps project in collaboration with BKK and
+          the university, implementing features for managing metro stations.
+        </p>
+        <img
+          src="assets/images/openmetromaps/SS1.png"
+          alt="OpenMetroMaps Screenshot"
+          class="project-thumbnail"
+        />
+        <button class="toggle-gallery-btn" data-project="openmetromaps">
+          View Images
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-images"></div>
       </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <p>
-      I'm a passionate software engineer with a strong foundation in programming, problem-solving, and creating impactful solutions.
-      I thrive in building scalable systems and working on projects that make a difference.
-    </p>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+      <div class="socials">
+        <a href="https://github.com/Al-RaoushBasel" target="_blank"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/basel-al-raoush-72b002291"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="mailto:basel.alraoush15@gmail.com"
+          ><i class="fas fa-envelope"></i> Email</a
+        >
+      </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2><i class="fas fa-tools"></i> Skills</h2>
-    <div class="skills-container">
-      <div class="skill"><i class="fab fa-python"></i> Python</div>
-      <div class="skill"><i class="fab fa-java"></i> Java</div>
-      <div class="skill"><i class="fas fa-database"></i> SQL</div>
-      <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
-      <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
-      <div class="skill"><i class="fab fa-react"></i> React</div>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 Basel Al-Raoush. All rights reserved.</p>
+    </footer>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-
-    <!-- MyBudgetTracker -->
-    <div class="project">
-      <h3><i class="fas fa-mobile-alt"></i> MyBudgetTracker</h3>
-      <p>
-        An Android application designed to help users track expenses across various categories, analyze spending habits with visual charts, and manage budgets efficiently.
-      </p>
-      <img src="assets/images/budget-Tracker/SS1.png" alt="MyBudgetTracker Screenshot" class="project-thumbnail" />
-      <button class="toggle-gallery-btn" data-project="budget-Tracker">View Images</button>
-    </div>
-
-    <!-- Pong Game -->
-    <div class="project">
-      <h3><i class="fas fa-gamepad"></i> Pong Game</h3>
-      <p>
-        A retro arcade game built with Python and Pygame, featuring fast-paced paddle and ball mechanics, dynamic AI, and multiplayer support.
-      </p>
-      <img src="assets/images/Pong/SS1.png" alt="Pong Game Screenshot" class="project-thumbnail" />
-      <button class="toggle-gallery-btn" data-project="Pong">View Images</button>
-    </div>
-
-    <!-- To-Do Website -->
-    <div class="project">
-      <h3><i class="fas fa-list-alt"></i> To-Do Website</h3>
-      <p>
-        A simple and efficient task management website built using modern web technologies. It allows users to add, edit, and delete tasks with an interactive and responsive UI.
-      </p>
-      <img src="assets/images/todo-website/SS1.png" alt="To-Do Website Screenshot" class="project-thumbnail" />
-      <button class="toggle-gallery-btn" data-project="todo-website">View Images</button>
-    </div>
-
-    <!-- Pipes in the Desert -->
-    <div class="project">
-      <h3><i class="fas fa-project-diagram"></i> Pipes in the Desert (Java)</h3>
-      <p>
-        Collaborated with a team to develop a strategic game in Java, following the full Software Development Life Cycle (SDLC).
-      </p>
-      <img src="assets/images/pipes-in-desert/SS1.png" alt="Pipes in the Desert Screenshot" class="project-thumbnail" />
-      <button class="toggle-gallery-btn" data-project="pipes-in-desert">View Images</button>
-    </div>
-
-    <!-- OpenMetroMaps Contribution -->
-    <div class="project">
-      <h3><i class="fas fa-map-marker-alt"></i> OpenMetroMaps Contribution (Java)</h3>
-      <p>
-        Contributed to the OpenMetroMaps project in collaboration with BKK and the university, implementing features for managing metro stations.
-      </p>
-      <img src="assets/images/openmetromaps/SS1.png" alt="OpenMetroMaps Screenshot" class="project-thumbnail" />
-      <button class="toggle-gallery-btn" data-project="openmetromaps">View Images</button>
-    </div>
-  </section>
-
-  <!-- Modal -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="modal-images"></div>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
-    </form>
-    <div class="socials">
-      <a href="https://github.com/Al-RaoushBasel" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://linkedin.com/in/basel-al-raoush-72b002291" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:basel.alraoush15@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Basel Al-Raoush. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
