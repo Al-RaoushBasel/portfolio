@@ -146,41 +146,114 @@ h2 {
   }
 }
 
+
+/* Education Section */
+.education {
+  padding: 4rem 2rem;
+  background-color: #0d1117;
+  text-align: center;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bme-logo {
+  max-width: 300px; /* Limit logo size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.education-details {
+  text-align: left; /* Align text to the left for balance */
+  color: #c9d1d9;
+}
+
+.education-details h3 {
+  color: #58a6ff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.education-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column; /* Stack content on smaller screens */
+    text-align: center;
+  }
+
+  .education-details {
+    text-align: center; /* Center text on smaller screens */
+  }
+}
+
 /* Skills Section */
 .skills {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #0d1117;
+  background-color: #161b22;
 }
 
 .skills-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  width: 100%;
+  text-align: left;
+  color: #58a6ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .skill {
   background-color: #21262d;
   color: #58a6ff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1rem;
   border: 2px solid #58a6ff;
   border-radius: 5px;
+  text-align: center;
   font-size: 1rem;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 150px;
+}
+
+.skill i {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .skill:hover {
-  background-color: #58a6ff;
-  color: #0d1117;
   transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(88, 166, 255, 0.5);
+  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .skill {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
 }
 
 /* Projects Section */
 .projects {
   padding: 3rem 2rem;
-  background-color: #161b22;
+  background-color: #0d1117;
   text-align: center;
 }
 
@@ -245,7 +318,7 @@ h2 {
 .contact {
   text-align: center;
   padding: 3rem 2rem;
-  background-color: #0d1117;
+  background-color: #161b22;
 }
 
 .contact form {
