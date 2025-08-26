@@ -650,6 +650,24 @@ h3::after {
   flex-wrap: wrap;
 }
 
+/* Project Thumbnail Images */
+.project-thumbnail {
+  width: 100%;
+  max-width: 350px;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.project-thumbnail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(88, 166, 255, 0.3);
+}
+
 .project a,
 .toggle-gallery-btn {
   display: inline-block;
@@ -899,7 +917,7 @@ h3::after {
 
 .modal-content img {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   height: auto;
   margin: 0.8rem;
   border-radius: var(--border-radius);
@@ -907,7 +925,7 @@ h3::after {
   transition: all var(--transition-speed);
   border: 2px solid transparent;
   object-fit: contain;
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .modal-content img:hover {
@@ -1041,6 +1059,19 @@ footer p {
   }
 }
 
+/* Tablet and medium screens */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .project-thumbnail {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+  .modal-content img {
+    max-width: 500px;
+    max-height: 400px;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --border-radius: 8px;
@@ -1112,18 +1143,20 @@ footer p {
   }
   
   .project-thumbnail {
-    height: 200px;
+    max-height: 180px;
+    max-width: 100%;
   }
   
   .modal-content {
     padding: 1.5rem;
     margin: 1rem;
     max-width: 95vw;
+    max-height: 90vh;
   }
   
   .modal-content img {
     max-width: 100%;
-    max-height: 250px;
+    max-height: 60vh;
     margin: 0.5rem 0;
     object-fit: contain;
   }
@@ -1195,7 +1228,7 @@ footer p {
   
   .modal-content img {
     max-width: 100%;
-    max-height: 200px;
+    max-height: 50vh;
     margin: 0.3rem 0;
   }
   
