@@ -140,26 +140,63 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <img
-          src="assets/images/profile.jpeg"
-          alt="Basel Al-Raoush - Software Engineering Student"
-          class="profile-pic"
-        />
-        <h1>Hi, I'm <span class="highlight">Basel Al-Raoush</span></h1>
-        <p class="role">Software Engineering Student | Junior SWE & ML Developer</p>
-        <p class="tagline">I build efficient and reliable software solutions for the future.</p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn btn-primary">
-            <i class="fas fa-code"></i> View Projects
-          </a>
-          <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
-            <i class="fas fa-download"></i> Download CV
-          </a>
-          <a href="#contact" class="btn btn-tertiary">
-            <i class="fas fa-envelope"></i> Contact Me
-          </a>
+    <section id="hero" class="hero" role="main">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Profile Photo Column -->
+          <div class="hero-image">
+            <div class="profile-container">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Basel Al-Raoush, Software Engineering Student and Junior Developer"
+                class="profile-pic"
+                loading="eager"
+              />
+            </div>
+          </div>
+          
+          <!-- Content Column -->
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm <span class="name-highlight">Basel Al-Raoush</span>
+            </h1>
+            <p class="hero-subtitle">
+              Software Engineering Student <span class="separator">•</span> Junior SWE & ML Developer
+            </p>
+            <p class="hero-tagline">
+              I build efficient and reliable software solutions for the future.
+            </p>
+            
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-actions">
+              <a 
+                href="#projects" 
+                class="btn btn-primary" 
+                aria-label="View my software development projects"
+              >
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <span>View Projects</span>
+              </a>
+              <a 
+                href="assets/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn btn-secondary" 
+                aria-label="Download my resume as PDF"
+              >
+                <i class="fas fa-download" aria-hidden="true"></i>
+                <span>Download CV</span>
+              </a>
+              <a 
+                href="#contact" 
+                class="btn btn-tertiary" 
+                aria-label="Get in touch with me"
+              >
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -185,45 +222,125 @@
 
 <!-- Skills Section -->
 <section id="skills" class="skills">
-  <h2><i class="fas fa-tools"></i> Skills</h2>
-  <div class="skills-container">
+  <div class="container">
+    <h2><i class="fas fa-tools"></i> Skills & Technologies</h2>
+    <div class="skills-container">
 
-    <!-- Confident -->
-    <div class="skill-category">
-      <h3>Confident</h3>
-      <div class="skills-grid">
-        <div class="skill" data-skill="Python"><i class="fab fa-python"></i><span>Python</span></div>
-        <div class="skill" data-skill="Java"><i class="fab fa-java"></i><span>Java</span></div>
-        <div class="skill" data-skill="JavaScript"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-        <div class="skill" data-skill="HTML"><i class="fab fa-html5"></i><span>HTML</span></div>
-        <div class="skill" data-skill="CSS"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-        <div class="skill" data-skill="Git"><i class="fab fa-git-alt"></i><span>Git</span></div>
-        <div class="skill" data-skill="MySQL"><i class="fas fa-database"></i><span>MySQL</span></div>
+      <!-- Confident -->
+      <div class="skill-category">
+        <h3><i class="fas fa-star"></i> Expert Level</h3>
+        <div class="skills-grid">
+          <div class="skill confident" data-skill="Python">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <p>Advanced programming & ML</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="90"></div></div>
+          </div>
+          <div class="skill confident" data-skill="Java">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+            <h4>Java</h4>
+            <p>Object-oriented programming</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="85"></div></div>
+          </div>
+          <div class="skill confident" data-skill="JavaScript">
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <h4>JavaScript</h4>
+            <p>Frontend & backend development</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="80"></div></div>
+          </div>
+          <div class="skill confident" data-skill="HTML">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <p>Semantic web development</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="90"></div></div>
+          </div>
+          <div class="skill confident" data-skill="CSS">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <p>Modern styling & animations</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="85"></div></div>
+          </div>
+          <div class="skill confident" data-skill="Git">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git</h4>
+            <p>Version control & collaboration</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="80"></div></div>
+          </div>
+          <div class="skill confident" data-skill="MySQL">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>MySQL</h4>
+            <p>Database design & queries</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="75"></div></div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Working Knowledge -->
-    <div class="skill-category">
-      <h3>Working Knowledge</h3>
-      <div class="skills-grid">
-        <div class="skill" data-skill="Flutter"><i class="fas fa-mobile-alt"></i><span>Flutter</span></div>
-        <div class="skill" data-skill="Firebase"><i class="fas fa-fire"></i><span>Firebase</span></div>
-        <div class="skill" data-skill="Riverpod"><i class="fas fa-layer-group"></i><span>Riverpod</span></div>
-        <div class="skill" data-skill="C++"><i class="fas fa-cube"></i><span>C++</span></div>
-        <div class="skill" data-skill="React"><i class="fab fa-react"></i><span>React</span></div>
-        <div class="skill" data-skill="Docker"><i class="fab fa-docker"></i><span>Docker</span></div>
-        <div class="skill" data-skill="MongoDB"><i class="fas fa-database"></i><span>MongoDB</span></div>
-        <div class="skill" data-skill="Linux"><i class="fab fa-ubuntu"></i><span>Linux</span></div>
+      <!-- Working Knowledge -->
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Proficient</h3>
+        <div class="skills-grid">
+          <div class="skill working" data-skill="Flutter">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Flutter</h4>
+            <p>Cross-platform mobile apps</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="70"></div></div>
+          </div>
+          <div class="skill working" data-skill="Firebase">
+            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+            <h4>Firebase</h4>
+            <p>Backend as a service</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="65"></div></div>
+          </div>
+          <div class="skill working" data-skill="React">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <p>Component-based UIs</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="60"></div></div>
+          </div>
+          <div class="skill working" data-skill="C++">
+            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+            <h4>C++</h4>
+            <p>Systems programming</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="55"></div></div>
+          </div>
+          <div class="skill working" data-skill="Docker">
+            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+            <h4>Docker</h4>
+            <p>Containerization</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="50"></div></div>
+          </div>
+          <div class="skill working" data-skill="MongoDB">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>MongoDB</h4>
+            <p>NoSQL database</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="55"></div></div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Learning -->
-    <div class="skill-category">
-      <h3>Learning</h3>
-      <div class="skills-grid">
-        <div class="skill" data-skill="Machine Learning"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
-        <div class="skill" data-skill="Deep Learning"><i class="fas fa-robot"></i><span>Deep Learning</span></div>
-        <div class="skill" data-skill="Cloud Computing"><i class="fas fa-cloud"></i><span>Cloud Computing</span></div>
+      <!-- Learning -->
+      <div class="skill-category">
+        <h3><i class="fas fa-seedling"></i> Currently Learning</h3>
+        <div class="skills-grid">
+          <div class="skill learning" data-skill="Machine Learning">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h4>Machine Learning</h4>
+            <p>AI & data science</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="40"></div></div>
+          </div>
+          <div class="skill learning" data-skill="Deep Learning">
+            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+            <h4>Deep Learning</h4>
+            <p>Neural networks & AI</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="35"></div></div>
+          </div>
+          <div class="skill learning" data-skill="Cloud Computing">
+            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+            <h4>Cloud Computing</h4>
+            <p>AWS & distributed systems</p>
+            <div class="skill-bar"><div class="skill-progress" data-percent="30"></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -512,33 +629,53 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
-      </form>
-      <div class="contact-actions">
-        <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
-          <i class="fas fa-download"></i> Download CV
-        </a>
-      </div>
-      <div class="social-links">
-        <a href="https://github.com/Al-RaoushBasel" target="_blank" class="btn btn-tertiary">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://linkedin.com/in/basel-al-raoush-72b002291" target="_blank" class="btn btn-tertiary">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:basel.alraoush15@gmail.com" class="btn btn-tertiary">
-          <i class="fas fa-envelope"></i> Email
-        </a>
+      <div class="container">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        
+        <div class="contact-content">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          
+          <div class="contact-info">
+            <div class="contact-actions">
+              <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
+            
+            <div class="social-links">
+              <h3>Connect with me</h3>
+              <div class="social-buttons">
+                <a href="https://github.com/Al-RaoushBasel" target="_blank" class="btn btn-tertiary">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/basel-al-raoush-72b002291" target="_blank" class="btn btn-tertiary">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:basel.alraoush15@gmail.com" class="btn btn-tertiary">
+                  <i class="fas fa-envelope"></i> Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

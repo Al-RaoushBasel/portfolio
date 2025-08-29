@@ -126,13 +126,13 @@ heroTimeline
     ease: "back.out(1.7)",
   }, "-=0.4");
 
-// Floating animation for hero heading
+// Subtle breathing animation for hero heading - very gentle
 gsap.to(".hero-content h1", {
-  y: 10,
-  duration: 2,
+  y: 2,
+  duration: 4,
   repeat: -1,
   yoyo: true,
-  ease: "sine.inOut",
+  ease: "power1.inOut",
 });
 
 // Enhanced profile picture interactions
@@ -186,11 +186,11 @@ gsap.from(".skills-container .skill", {
   ease: "back.out(1.7)",
 });
 
-// Enhanced hover animations for skills
+// Enhanced hover animations for skills with progress bars
 document.querySelectorAll(".skill").forEach((skill) => {
   skill.addEventListener("mouseenter", () => {
     gsap.to(skill, {
-      scale: 1.08,
+      scale: 1.05,
       y: -8,
       duration: 0.3,
       ease: "power2.out",
@@ -204,6 +204,28 @@ document.querySelectorAll(".skill").forEach((skill) => {
       ease: "power2.out",
     });
   });
+});
+
+// Animate skill progress bars when in view
+const skillsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const progressBars = entry.target.querySelectorAll('.skill-progress');
+      progressBars.forEach(bar => {
+        const percent = bar.getAttribute('data-percent');
+        if (percent) {
+          bar.style.width = percent + '%';
+        }
+      });
+    }
+  });
+}, { threshold: 0.3 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const skillsSection = document.querySelector('.skills');
+  if (skillsSection) {
+    skillsObserver.observe(skillsSection);
+  }
 });
 
 // Projects Section Enhanced Animations
