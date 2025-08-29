@@ -1,7 +1,45 @@
 console.log("Enhanced Portfolio Script loaded!");
 
+// ===== ANIMATED SECTION HEADERS =====
+const observerOptions = {
+  threshold: 0.3,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const headerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const header = entry.target.querySelector('h2');
+      if (header) {
+        header.classList.add('animate');
+      }
+    }
+  });
+}, observerOptions);
+
+// Observe all sections with h2 headers
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    if (section.querySelector('h2')) {
+      headerObserver.observe(section);
+    }
+  });
+});
+
+// Mobile Navigation Toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+}
+
 // Smooth scrolling for navigation links
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinks = document.querySelectorAll(".nav-link");
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -9,6 +47,12 @@ navLinks.forEach((link) => {
     const targetSection = document.getElementById(targetId);
 
     if (targetSection) {
+      // Close mobile menu if open
+      if (navMenu && navToggle) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      }
+      
       // Update active nav link
       navLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
@@ -410,59 +454,71 @@ function showNotification(message, type = 'info') {
 const backToTopButton = document.getElementById("back-to-top");
 let lastScrollTop = 0;
 
-window.addEventListener('scroll', () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-  if (scrollTop > 300) {
-    if (!backToTopButton.classList.contains('show')) {
-      backToTopButton.classList.add('show');
-      backToTopButton.style.display = 'block';
-      gsap.from(backToTopButton, {
+if (backToTopButton) {
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > 300) {
+      if (!backToTopButton.classList.contains('show')) {
+        backToTopButton.classList.add('show');
+        backToTopButton.style.display = 'block';
+        gsap.from(backToTopButton, {
+          scale: 0,
+          duration: 0.3,
+          ease: "back.out(1.7)"
+        });
+      }
+    } else if (backToTopButton.classList.contains('show')) {
+      backToTopButton.classList.remove('show');
+      gsap.to(backToTopButton, {
         scale: 0,
         duration: 0.3,
-        ease: "back.out(1.7)"
+        ease: "power2.out",
+        onComplete: () => {
+          backToTopButton.style.display = 'none';
+        }
       });
     }
-  } else if (backToTopButton.classList.contains('show')) {
-    backToTopButton.classList.remove('show');
-    gsap.to(backToTopButton, {
-      scale: 0,
-      duration: 0.3,
-      ease: "power2.out",
-      onComplete: () => {
-        backToTopButton.style.display = 'none';
-      }
-    });
-  }
-  
-  lastScrollTop = scrollTop;
-});
+    
+    lastScrollTop = scrollTop;
+  });
 
-function scrollToTop() {
-  gsap.to(window, {
-    scrollTo: { y: 0 },
-    duration: 1.5,
-    ease: "power3.out"
+  backToTopButton.addEventListener('click', () => {
+    gsap.to(window, {
+      scrollTo: { y: 0 },
+      duration: 1.5,
+      ease: "power3.out"
+    });
   });
 }
 
+function scrollToTop() {
+  if (backToTopButton) {
+    gsap.to(window, {
+      scrollTo: { y: 0 },
+      duration: 1.5,
+      ease: "power3.out"
+    });
+  }
+}
+
 // Intersection Observer for fade-in animations
-const observerOptions = {
+const fadeObserverOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+const fadeObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in-visible');
     }
   });
-}, observerOptions);
+}, fadeObserverOptions);
 
 // Observe elements for fade-in animation
 document.querySelectorAll('.project, .skill, .education-container').forEach(el => {
-  observer.observe(el);
+  fadeObserver.observe(el);
 });
 
 // Performance optimization: Debounce scroll events

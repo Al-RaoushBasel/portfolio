@@ -5,29 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basel Al-Raoush | Software Engineering Student & ML Developer</title>
 
+    <!-- Enhanced Meta Tags -->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#58a6ff" />
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Basel Al-Raoush - Software Engineering Student at BME, Junior SWE & ML Developer. Specializing in AI/ML, Flutter apps, and full-stack development. View my projects including barber booking app and Timelab Mods brand."
+      content="Basel Al-Raoush - Software Engineering Student at Budapest University of Technology. Specializing in AI/ML, Flutter development, and full-stack solutions. View my projects and connect with me."
     />
     <meta
       name="keywords"
-      content="Basel Al-Raoush,Software Engineering Student,ML Developer,AI Developer,Flutter Developer,BME,Budapest University,Timelab Mods,Machine Learning,Barber Booking App"
+      content="Basel Al-Raoush,Software Engineering Student,ML Developer,AI Developer,Flutter Developer,BME,Budapest University,Machine Learning,Full Stack Developer,Portfolio"
     />
 
-    <meta
-      name="keywords"
-      lang="ar"
-      content="باسل الراعوش, باسل اياد, باسل إياد الراعوش, مهندس برمجيات, برمجة, تطوير تطبيقات, تطوير مواقع"
-    />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Basel Al-Raoush | Software Engineering Student & ML Developer" />
+    <meta property="og:description" content="Software Engineering Student at BME specializing in AI/ML and Flutter development. View my projects and connect with me." />
+    <meta property="og:image" content="https://yourportfolio.com/assets/images/profile.jpeg" />
+    <meta property="og:url" content="https://yourportfolio.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Basel Al-Raoush Portfolio" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Basel Al-Raoush | Software Engineering Student & ML Developer" />
+    <meta name="twitter:description" content="Software Engineering Student at BME specializing in AI/ML and Flutter development." />
+    <meta name="twitter:image" content="https://yourportfolio.com/assets/images/profile.jpeg" />
 
     <meta name="author" content="Basel Al-Raoush" />
+    <meta name="robots" content="index, follow" />
 
-    <!--favicon-->
+    <!--Favicon-->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://al-raoushbasel.github.io/portfolio/" />
@@ -107,15 +120,23 @@
 
   <body>
     <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">Basel Al-Raoush</a>
+        <div class="nav-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -130,13 +151,13 @@
         <p class="role">Software Engineering Student | Junior SWE & ML Developer</p>
         <p class="tagline">I build efficient and reliable software solutions for the future.</p>
         <div class="cta-buttons">
-          <a href="#projects" class="btn">
+          <a href="#projects" class="btn btn-primary">
             <i class="fas fa-code"></i> View Projects
           </a>
           <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
             <i class="fas fa-download"></i> Download CV
           </a>
-          <a href="#contact" class="btn btn-outline">
+          <a href="#contact" class="btn btn-tertiary">
             <i class="fas fa-envelope"></i> Contact Me
           </a>
         </div>
@@ -220,15 +241,20 @@
       A comprehensive Flutter mobile application for barber shop management with real-time booking system. Features role-based authentication flows for customers and barbers, Firebase backend integration, and state management with Riverpod. Includes appointment scheduling, service selection, and user profile management.
     </p>
     <p><strong>Skills:</strong> Flutter · Firebase · Riverpod · Dart · Real-time Database · Authentication · State Management · Mobile Development</p>
-    <img
-      src="assets/images/barber-app/SS1.png"
-      alt="Barber Booking App Screenshot showing appointment booking interface"
-      class="project-thumbnail"
-    />
+    <div class="project-thumbnail-container">
+      <img
+        src="assets/images/barber-app/SS1.png"
+        alt="Barber Booking App Screenshot showing appointment booking interface"
+        class="project-thumbnail"
+      />
+      <div class="project-thumbnail-overlay">
+        <div class="project-overlay-title">Barber Booking App</div>
+      </div>
+    </div>
   </div>
   <div class="project-buttons">
-    <a href="https://github.com/Al-RaoushBasel/barber-booking-app" target="_blank">View on GitHub</a>
-    <button class="toggle-gallery-btn" data-project="barber-app">
+    <a href="https://github.com/Al-RaoushBasel/barber-booking-app" target="_blank" class="btn btn-primary">View on GitHub</a>
+    <button class="toggle-gallery-btn btn btn-tertiary" data-project="barber-app">
       View Images
     </button>
   </div>
@@ -242,15 +268,20 @@
       An entrepreneurship project focused on custom watch modifications and brand development. Built a complete brand identity and e-commerce platform featuring custom watch parts, modification services, and brand website. Demonstrates business development, branding, and full-stack web development skills.
     </p>
     <p><strong>Skills:</strong> Entrepreneurship · Brand Development · E-commerce · Web Development · Business Strategy · Product Development</p>
-    <img
-      src="assets/images/timelab-mods/SS1.png"
-      alt="Timelab Mods brand website showing custom watch modifications"
-      class="project-thumbnail"
-    />
+    <div class="project-thumbnail-container">
+      <img
+        src="assets/images/timelab-mods/SS1.png"
+        alt="Timelab Mods brand website showing custom watch modifications"
+        class="project-thumbnail"
+      />
+      <div class="project-thumbnail-overlay">
+        <div class="project-overlay-title">Timelab Mods</div>
+      </div>
+    </div>
   </div>
   <div class="project-buttons">
-    <a href="https://timelab-mods.com" target="_blank">View Project</a>
-    <button class="toggle-gallery-btn" data-project="timelab-mods">
+    <a href="https://timelab-mods.com" target="_blank" class="btn btn-primary">View Project</a>
+    <button class="toggle-gallery-btn btn btn-tertiary" data-project="timelab-mods">
       View Images
     </button>
   </div>
@@ -264,15 +295,20 @@
       A full-stack web application that uses a MobileNetV2-based Convolutional Neural Network (CNN) to recognize handwritten digits drawn on a web canvas. <strong>Achieved 95% accuracy with real-time inference under 200ms.</strong> Built through transfer learning, fine-tuning, data augmentation, and careful image preprocessing.
     </p>
     <p><strong>Skills:</strong> Machine Learning · Deep Learning · Flask · TensorFlow/Keras · MobileNetV2 · NumPy · PIL · Flask-CORS · HTML · CSS · JavaScript · Railway.com</p>
-    <img
-      src="assets/images/digit-recognition-ai/SS1.png"
-      alt="Digit Recognition AI Screenshot showing neural network recognizing handwritten digits"
-      class="project-thumbnail"
-    />
+    <div class="project-thumbnail-container">
+      <img
+        src="assets/images/digit-recognition-ai/SS1.png"
+        alt="Digit Recognition AI Screenshot showing neural network recognizing handwritten digits"
+        class="project-thumbnail"
+      />
+      <div class="project-thumbnail-overlay">
+        <div class="project-overlay-title">Digit Recognition AI</div>
+      </div>
+    </div>
   </div>
   <div class="project-buttons">
-    <a href="https://al-raoushbasel.github.io/digit-recognition-frontend/" target="_blank">View Project</a>
-    <button class="toggle-gallery-btn" data-project="digit-recognition-ai">
+    <a href="https://al-raoushbasel.github.io/digit-recognition-frontend/" target="_blank" class="btn btn-primary">View Project</a>
+    <button class="toggle-gallery-btn btn btn-tertiary" data-project="digit-recognition-ai">
       View Images
     </button>
   </div>
@@ -286,15 +322,20 @@
         This project explores how AI can be used to detect fake news using Natural Language Processing (NLP). Built using a Kaggle dataset, it experiments with models from traditional Logistic Regression to advanced deep learning models like BERT.
       </p>
       <p><strong>Skills:</strong> Machine Learning · Python · NLP · AI · Scikit-learn · pandas</p>
-      <img
-        src="assets/images/fake-news-detector/SS1.png"
-        alt="Fake News Detector Screenshot showing machine learning model analyzing news articles"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/fake-news-detector/SS1.png"
+          alt="Fake News Detector Screenshot showing machine learning model analyzing news articles"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">Fake News Detector</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/Al-RaoushBasel/Fake-News-Detector" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="fake-news-detector">
+      <a href="https://github.com/Al-RaoushBasel/Fake-News-Detector" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="fake-news-detector">
         View Images
       </button>
     </div>
@@ -308,15 +349,20 @@
         A tool for analyzing the sentiment of any text or tweet. Built with Streamlit for the web interface and Hugging Face Transformers for sentiment classification, this app allows real-time sentiment analysis of tweets or custom text.
       </p>
       <p><strong>Skills:</strong> Python · Machine Learning · NLP · Streamlit · Hugging Face Transformers</p>
-      <img
-        src="assets/images/sentiment-analysis-web-app/SS1.png"
-        alt="Sentiment Analysis Web App Screenshot showing real-time text sentiment classification"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/sentiment-analysis-web-app/SS1.png"
+          alt="Sentiment Analysis Web App Screenshot showing real-time text sentiment classification"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">Sentiment Analysis Web App</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/Al-RaoushBasel/Sentiment-Analysis" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="sentiment-analysis-web-app">
+      <a href="https://github.com/Al-RaoushBasel/Sentiment-Analysis" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="sentiment-analysis-web-app">
         View Images
       </button>
     </div>
@@ -330,15 +376,20 @@
         A Python-based interactive tool designed for managing personal finances by analyzing expenses, tracking spending habits, and generating visual reports.
       </p>
       <p><strong>Skills:</strong> Data Visualization · Python · pandas · Matplotlib · Plotly</p>
-      <img
-        src="assets/images/expense-analysis/SS1.png"
-        alt="Expense Analysis Dashboard Screenshot showing personal finance tracking and visualization"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/expense-analysis/SS1.png"
+          alt="Expense Analysis Dashboard Screenshot showing personal finance tracking and visualization"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">Expense Analysis Dashboard</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/Al-RaoushBasel/Expense-Analysis-Dashboard" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="expense-analysis">
+      <a href="https://github.com/Al-RaoushBasel/Expense-Analysis-Dashboard" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="expense-analysis">
         View Images
       </button>
     </div>
@@ -351,15 +402,20 @@
       <p>
         An Android application designed to help users track expenses across various categories, analyze spending habits with visual charts, and manage budgets efficiently.
       </p>
-      <img
-        src="assets/images/budget-Tracker/SS1.png"
-        alt="MyBudgetTracker Screenshot showing budget management and expense tracking interface"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/budget-Tracker/SS1.png"
+          alt="MyBudgetTracker Screenshot showing budget management and expense tracking interface"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">MyBudgetTracker</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/Al-RaoushBasel/MyBudgetTracker" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="budget-Tracker">
+      <a href="https://github.com/Al-RaoushBasel/MyBudgetTracker" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="budget-Tracker">
         View Images
       </button>
     </div>
@@ -374,15 +430,20 @@
       <p>
         Collaborated with a team to develop a strategic game in Java, following the full Software Development Life Cycle (SDLC).
       </p>
-      <img
-        src="assets/images/pipes-in-desert/SS1.png"
-        alt="Pipes in the Desert Screenshot showing game interface and gameplay mechanics"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/pipes-in-desert/SS1.png"
+          alt="Pipes in the Desert Screenshot showing game interface and gameplay mechanics"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">Pipes in the Desert</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/kabu03/plumbers-and-saboteurs" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="pipes-in-desert">
+      <a href="https://github.com/kabu03/plumbers-and-saboteurs" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="pipes-in-desert">
         View Images
       </button>
     </div>
@@ -395,15 +456,20 @@
       <p>
         A retro arcade game built with Python and Pygame, featuring fast-paced paddle and ball mechanics, dynamic AI, and multiplayer support.
       </p>
-      <img
-        src="assets/images/Pong/SS1.png"
-        alt="Pong Game Screenshot showing classic arcade game implementation"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/Pong/SS1.png"
+          alt="Pong Game Screenshot showing classic arcade game implementation"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">Pong Game</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <a href="https://github.com/Al-RaoushBasel/Pong-Game" target="_blank">View on GitHub</a>
-      <button class="toggle-gallery-btn" data-project="Pong">
+      <a href="https://github.com/Al-RaoushBasel/Pong-Game" target="_blank" class="btn btn-primary">View on GitHub</a>
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="Pong">
         View Images
       </button>
     </div>
@@ -416,14 +482,19 @@
       <p>
         A simple and efficient task management website built using modern web technologies. It allows users to add, edit, and delete tasks with an interactive and responsive UI.
       </p>
-      <img
-        src="assets/images/todo-website/SS1.png"
-        alt="To-Do Website Screenshot showing task management interface with add, edit, and delete functionality"
-        class="project-thumbnail"
-      />
+      <div class="project-thumbnail-container">
+        <img
+          src="assets/images/todo-website/SS1.png"
+          alt="To-Do Website Screenshot showing task management interface with add, edit, and delete functionality"
+          class="project-thumbnail"
+        />
+        <div class="project-thumbnail-overlay">
+          <div class="project-overlay-title">To-Do Website</div>
+        </div>
+      </div>
     </div>
     <div class="project-buttons">
-      <button class="toggle-gallery-btn" data-project="todo-website">
+      <button class="toggle-gallery-btn btn btn-tertiary" data-project="todo-website">
         View Images
       </button>
     </div>
@@ -451,25 +522,23 @@
           placeholder="Your Message"
           required
         ></textarea>
-        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
       </form>
       <div class="contact-actions">
         <a href="assets/resume.pdf" target="_blank" class="btn btn-secondary">
           <i class="fas fa-download"></i> Download CV
         </a>
       </div>
-      <div class="socials">
-        <a href="https://github.com/Al-RaoushBasel" target="_blank"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://linkedin.com/in/basel-al-raoush-72b002291"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-        <a href="mailto:basel.alraoush15@gmail.com"
-          ><i class="fas fa-envelope"></i> Email</a
-        >
+      <div class="social-links">
+        <a href="https://github.com/Al-RaoushBasel" target="_blank" class="btn btn-tertiary">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/basel-al-raoush-72b002291" target="_blank" class="btn btn-tertiary">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:basel.alraoush15@gmail.com" class="btn btn-tertiary">
+          <i class="fas fa-envelope"></i> Email
+        </a>
       </div>
     </section>
 
@@ -478,8 +547,8 @@
       <p>© 2024 Basel Al-Raoush. All rights reserved.</p>
     </footer>
 
-    <button onclick="scrollToTop()" id="back-to-top" class="btn">
-      ↑ Back to Top
+    <button id="back-to-top" class="btn btn-primary">
+      <i class="fas fa-chevron-up"></i>
     </button>
 
     <!-- JavaScript -->
