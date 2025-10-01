@@ -1,405 +1,694 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basel Al-Raoush | Software Engineer Portfolio</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basel Al-Raoush | Software Engineer & ML Developer</title>
+  <meta name="description" content="Portfolio of Basel Al-Raoush — projects in Flutter + Firebase, ML/AI, and full-stack development." />
+  <meta name="author" content="Basel Al-Raoush" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="light dark" />
 
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Basel Al-Raoush | Software Engineer & ML Developer" />
+  <meta property="og:description" content="BME Software Engineering student building ML apps and mobile products. Explore projects and experience." />
+  <meta property="og:url" content="https://al-raoushbasel.github.io/portfolio/" />
+  <meta property="og:image" content="https://al-raoushbasel.github.io/portfolio/assets/images/profile.jpeg" />
+  <meta property="og:site_name" content="Basel Al-Raoush Portfolio" />
+  <meta property="og:locale" content="en_US" />
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Portfolio of Basel Al-Raoush, a passionate software engineer showcasing projects, skills, and achievements."
-    />
-    <meta
-      name="keywords"
-      content="Basel Al-Raoush,Al-Raoush Basel Eyad,Basel Al Raoosh,Basel Al Raoush,software engineer,Python,Java"
-    />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Basel Al-Raoush | Software Engineer & ML Developer" />
+  <meta name="twitter:description" content="BME Software Engineering student building ML apps and mobile products. Explore projects and experience." />
+  <meta name="twitter:image" content="https://al-raoushbasel.github.io/portfolio/assets/images/profile.jpeg" />
 
-    <meta
-      name="keywords"
-      lang="ar"
-      content="باسل الراعوش, باسل اياد, باسل إياد الراعوش, مهندس برمجيات, برمجة, تطوير تطبيقات, تطوير مواقع"
-    />
+  <link rel="canonical" href="https://al-raoushbasel.github.io/portfolio/" />
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
 
-    <meta name="author" content="Basel Al-Raoush" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Basel Al-Raoush",
+    "url": "https://al-raoushbasel.github.io/portfolio/",
+    "image": "https://al-raoushbasel.github.io/portfolio/assets/images/profile.jpeg",
+    "description": "Software Engineering student at BME, specializing in AI/ML and Flutter development.",
+    "jobTitle": "Software Engineer & ML Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Budapest University of Technology and Economics (BME)",
+      "url": "https://www.bme.hu/?language=en"
+    },
+    "sameAs": [
+      "https://github.com/Al-RaoushBasel",
+      "https://linkedin.com/in/basel-al-raoush-72b002291"
+    ]
+  }
+  </script>
+</head>
 
-    <!--favicon-->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://al-raoushbasel.github.io/portfolio/" />
-
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Basel Al-Raoush | Software Engineer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Showcasing the projects and skills of Basel Al-Raoush, a passionate software engineer."
-    />
-    <meta
-      property="og:image"
-      content="https://al-raoushbasel.github.io/portfolio//assets/images/profile.jpeg"
-    />
-    <meta
-      property="og:url"
-      content="https://al-raoushbasel.github.io/portfolio/"
-    />
-    <meta property="og:type" content="website" />
-
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Basel Al-Raoush Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image:alt"
-      content="Profile picture of Basel Al-Raoush"
-    />
-
-    <meta name="revised" content="2024-12-07" />
-
-    <!-- Structured Data for Search Engines -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Basel Al-Raoush",
-        "url": "https://al-raoushbasel.github.io/portfolio/",
-        "image": "https://al-raoushbasel.github.io/portfolio/assets/images/profile.jpeg",
-        "description": "Portfolio of Basel Al-Raoush, a passionate software engineer showcasing projects, skills, and achievements.",
-        "sameAs": [
-          "https://github.com/Al-RaoushBasel",
-          "https://linkedin.com/in/basel-al-raoush-72b002291"
-        ]
-      }
-    </script>
-
-    <!-- Styles and Fonts -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <img
-          src="assets/images/profile.jpeg"
-          alt="Basel Al-Raoush"
-          class="profile-pic"
-        />
-        <h1>Hi, I'm <span class="highlight">Basel Al-Raoush</span></h1>
-        <p>I build efficient and reliable software solutions for the future.</p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn">
-            <i class="fas fa-code"></i> View Projects
-          </a>
-          <a href="https://github.com/Al-RaoushBasel" target="_blank" class="btn">
-            <i class="fab fa-github"></i> View GitHub
-          </a>
-        </div>
-      </div>
-    </section
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h2><i class="fas fa-user"></i> About Me</h2>
-      <p>
-        I'm a passionate software engineer with a strong foundation in
-        programming, problem-solving, and creating impactful solutions. I thrive
-        in building scalable systems and working on projects that make a
-        difference.
-      </p>
-    </section>
-
-    <section id="education" class="education">
-      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-      <div class="education-container">
-        <img src="assets/images/bme-logo.png" alt="BME Logo" class="bme-logo" />
-        <div class="education-details">
-          <h3>Budapesti Műszaki és Gazdaságtudományi Egyetem</h3>
-          <p>
-            Also known as BME, the Budapest University of Technology and
-            Economics is one of Europe's most prestigious universities,
-            providing exceptional education in engineering, technology, and
-            economics. I am proud to be studying software engineering here.
-          </p>
-        </div>
-      </div>
-    </section>
-
-<!-- Skills Section -->
-<section id="skills" class="skills">
-  <h2><i class="fas fa-tools"></i> Skills</h2>
-  <div class="skills-container">
-
-    <!-- Core Programming Languages -->
-    <h3>Programming Languages</h3>
-    <div class="skill"><i class="fab fa-python"></i> Python</div>
-    <div class="skill"><i class="fab fa-java"></i> Java</div>
-    <div class="skill"><i class="fas fa-cube"></i> C++</div>
-    <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
-
-    <!-- Development Tools -->
-    <h3>Development Tools</h3>
-    <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
-    <div class="skill"><i class="fab fa-ubuntu"></i> Linux</div>
-    <div class="skill"><i class="fab fa-docker"></i> Docker</div>
-
-    <!-- Frameworks and Libraries -->
-    <h3>Frameworks and Libraries</h3>
-    <div class="skill"><i class="fab fa-react"></i> React</div>
-    <div class="skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
-
-    <!-- Database Systems -->
-    <h3>Database Systems</h3>
-    <div class="skill"><i class="fas fa-database"></i> MySQL</div>
-    <div class="skill"><i class="fas fa-database"></i> MongoDB</div>
-
-    <!-- Software Development Techniques -->
-    <h3>Software Development Techniques</h3>
-    <div class="skill"><i class="fas fa-project-diagram"></i> Agile/Scrum</div>
-    <div class="skill"><i class="fas fa-sitemap"></i> SOLID Principles</div>
-    <div class="skill"><i class="fas fa-code-branch"></i> OOP</div>
-
-    <!-- Currently Learning -->
-    <h3>Currently Learning</h3>
-    <div class="skill"><i class="fas fa-robot"></i> AI for Game Development</div>
-    <div class="skill"><i class="fas fa-cloud"></i> Machine Learning</div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="projects">
-  <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-
-  <!-- Digit Recognition AI -->
-<div class="project">
-  <h3><i class="fas fa-brain"></i> Digit Recognition AI</h3>
-  <p>
-    A full-stack web application that uses a MobileNetV2-based Convolutional Neural Network (CNN) to recognize handwritten digits drawn on a web canvas. Achieved 95% accuracy through transfer learning, fine-tuning, data augmentation, and careful image preprocessing.
-  </p>
-  <p><strong>Skills:</strong> Machine Learning · Deep Learning · Flask · TensorFlow/Keras · MobileNetV2 · NumPy · PIL · Flask-CORS · HTML · CSS · JavaScript · Railway.com</p>
-  <a href="https://al-raoushbasel.github.io/digit-recognition-frontend/" target="_blank">View Project</a>
-  <img
-    src="assets/images/digit-recognition-ai/SS1.png"
-    alt="Digit Recognition AI Screenshot"
-    class="project-thumbnail"
-  />
-  <button class="toggle-gallery-btn" data-project="digit-recognition-ai">
-    View Images
-  </button>
-</div>
-
-  <!-- Fake News Detector -->
-  <div class="project">
-    <h3><i class="fas fa-newspaper"></i> Fake News Detector</h3>
-    <p>
-      This project explores how AI can be used to detect fake news using Natural Language Processing (NLP). Built using a Kaggle dataset, it experiments with models from traditional Logistic Regression to advanced deep learning models like BERT.
-    </p>
-    <p><strong>Skills:</strong> Machine Learning · Python · NLP · AI · Scikit-learn · pandas</p>
-    <a href="https://github.com/Al-RaoushBasel/Fake-News-Detector" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/fake-news-detector/SS1.png"
-      alt="Fake News Detector Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="fake-news-detector">
-      View Images
-    </button>
-  </div>
-
-  <!-- Sentiment Analysis Web App -->
-  <div class="project">
-    <h3><i class="fas fa-comment-dots"></i> Sentiment Analysis Web App</h3>
-    <p>
-      A tool for analyzing the sentiment of any text or tweet. Built with Streamlit for the web interface and Hugging Face Transformers for sentiment classification, this app allows real-time sentiment analysis of tweets or custom text.
-    </p>
-    <p><strong>Skills:</strong> Python · Machine Learning · NLP · Streamlit · Hugging Face Transformers</p>
-    <a href="https://github.com/Al-RaoushBasel/Sentiment-Analysis" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/sentiment-analysis-web-app/SS1.png"
-      alt="Sentiment Analysis Web App Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="sentiment-analysis-web-app">
-      View Images
-    </button>
-  </div>
-
-  <!-- Expense Analysis Dashboard -->
-  <div class="project">
-    <h3><i class="fas fa-chart-line"></i> Expense Analysis Dashboard</h3>
-    <p>
-      A Python-based interactive tool designed for managing personal finances by analyzing expenses, tracking spending habits, and generating visual reports.
-    </p>
-    <p><strong>Skills:</strong> Data Visualization · Python · pandas · Matplotlib · Plotly</p>
-    <a href="https://github.com/Al-RaoushBasel/Expense-Analysis-Dashboard" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/expense-analysis/SS1.png"
-      alt="Expense Analysis Dashboard Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="expense-analysis">
-      View Images
-    </button>
-  </div>
-
-  <!-- MyBudgetTracker -->
-  <div class="project">
-    <h3><i class="fas fa-mobile-alt"></i> MyBudgetTracker</h3>
-    <p>
-      An Android application designed to help users track expenses across various categories, analyze spending habits with visual charts, and manage budgets efficiently.
-    </p>
-    <a href="https://github.com/Al-RaoushBasel/MyBudgetTracker" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/budget-Tracker/SS1.png"
-      alt="MyBudgetTracker Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="budget-Tracker">
-      View Images
-    </button>
-  </div>
-
-  <!-- Pipes in the Desert -->
-  <div class="project">
-    <h3>
-      <i class="fas fa-project-diagram"></i> Pipes in the Desert (Java)
-    </h3>
-    <p>
-      Collaborated with a team to develop a strategic game in Java, following the full Software Development Life Cycle (SDLC).
-    </p>
-    <a href="https://github.com/kabu03/plumbers-and-saboteurs" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/pipes-in-desert/SS1.png"
-      alt="Pipes in the Desert Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="pipes-in-desert">
-      View Images
-    </button>
-  </div>
-
-  <!-- Pong Game -->
-  <div class="project">
-    <h3><i class="fas fa-gamepad"></i> Pong Game</h3>
-    <p>
-      A retro arcade game built with Python and Pygame, featuring fast-paced paddle and ball mechanics, dynamic AI, and multiplayer support.
-    </p>
-    <a href="https://github.com/Al-RaoushBasel/Pong-Game" target="_blank">View on GitHub</a>
-    <img
-      src="assets/images/Pong/SS1.png"
-      alt="Pong Game Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="Pong">
-      View Images
-    </button>
-  </div>
-
-  <!-- To-Do Website -->
-  <div class="project">
-    <h3><i class="fas fa-list-alt"></i> To-Do Website</h3>
-    <p>
-      A simple and efficient task management website built using modern web technologies. It allows users to add, edit, and delete tasks with an interactive and responsive UI.
-    </p>
-
-    <img
-      src="assets/images/todo-website/SS1.png"
-      alt="To-Do Website Screenshot"
-      class="project-thumbnail"
-    />
-    <button class="toggle-gallery-btn" data-project="todo-website">
-      View Images
-    </button>
-  </div>
-</section>
-
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modal-images"></div>
-      </div>
+  <header class="site-header" aria-label="Primary">
+    <div class="container header-wrap">
+      <a class="brand" href="#hero" aria-label="Homepage">Basel<span class="brand-dim"> Al-Raoush</span></a>
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" id="navToggle" aria-controls="primary-navigation" aria-expanded="false">Menu</button>
+        <ul id="primary-navigation" class="menu">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact" rel="nofollow">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
-      </form>
-      <div class="socials">
-        <a href="https://github.com/Al-RaoushBasel" target="_blank"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
-        <a
-          href="https://linkedin.com/in/basel-al-raoush-72b002291"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-        <a href="mailto:basel.alraoush15@gmail.com"
-          ><i class="fas fa-envelope"></i> Email</a
-        >
+  <main id="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-wrap" data-reveal>
+        <div class="hero-copy">
+          <h1 id="hero-title" class="headline">Simple, reliable, intelligent software.</h1>
+          <p class="subhead">I’m Basel Al-Raoush, a Software Engineering student @ BME. My focus: building smart ML solutions and modern apps that solve real problems.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work" aria-label="View projects">See Projects</a>
+            <a class="btn btn-quiet" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open resume PDF">Download Resume</a>
+            <a class="btn btn-quiet" href="#contact" aria-label="Jump to contact">Get in Touch</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img class="avatar" src="assets/images/profile.jpeg" alt="Portrait of Basel Al-Raoush" width="400" height="400" loading="eager" fetchpriority="high" />
+        </figure>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2024 Basel Al-Raoush. All rights reserved.</p>
-    </footer>
+   <section id="work" class="section" aria-labelledby="work-title">
+  <div class="container" data-reveal>
+    <header class="section-head">
+      <h2 id="work-title" class="section-title">Featured Work</h2>
+      <p class="section-sub">Projects across mobile, ML, and data — built with a focus on impact and reliability.</p>
+    </header>
 
-    <button onclick="scrollToTop()" id="back-to-top" class="btn">
-      ↑ Back to Top
-    </button>
+    <div class="cards">
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-    <script>
-      const backToTopButton = document.getElementById("back-to-top");
-      window.onscroll = () => {
-        if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
+
+
+
+<!-- Barber Booking App -->
+<article class="card project" aria-labelledby="proj-barber-title">
+  <figure class="card-media">
+    <img src="assets/images/barber-app/SS1.png" 
+         alt="Barber Booking App — scheduling dashboard view" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category mobile">Mobile App</div>
+      <div class="project-status development">In Development</div>
+    </div>
+    <h3 id="proj-barber-title" class="card-title">Barber Booking App</h3>
+    <p class="card-text">
+      Cross-platform scheduling system designed for barbershops. Supports client, barber, 
+      and admin roles with real-time sync and push notifications. Currently in beta with 
+      15+ users, reducing booking confirmation time by ~40%.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">15+</span><span>Beta Users</span></div>
+      <div class="metric"><span class="metric-value">40%</span><span>Faster Confirmations</span></div>
+    </div>
+    <ul class="chips" aria-label="Tech stack">
+      <li>Flutter</li><li>Firebase</li><li>Riverpod</li>
+    </ul>
+  </div>
+</article>
+
+
+<!-- Timelab Mods -->
+<article class="card project" aria-labelledby="proj-tlm-title">
+  <figure class="card-media">
+    <img src="assets/images/timelab-mods/SS1.png" 
+         alt="Timelab Mods — Shopify storefront view" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category business">Business</div>
+      <div class="project-status live">Live</div>
+    </div>
+    <h3 id="proj-tlm-title" class="card-title">Timelab Mods</h3>
+    <p class="card-text">
+      Custom watch-modding brand built from the ground up. Designed the branding, 
+      product visuals, and Shopify storefront to create a consistent identity and 
+      scalable online presence. Currently an active e-commerce store with a growing customer base.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">Active</span><span>Store</span></div>
+      <div class="metric"><span class="metric-value">Full</span><span>Branding System</span></div>
+    </div>
+    <ul class="chips">
+      <li>Shopify</li><li>Branding</li><li>Marketing</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://timelab-mods.com" target="_blank" rel="noopener noreferrer">Visit Store</a>
+    </div>
+  </div>
+</article>
+
+
+      <!-- Online Signature Verification -->
+<article class="card project" aria-labelledby="proj-sig-title">
+  <figure class="card-media">
+    <img src="assets/images/signature-verification/SS1.png" 
+         alt="Online Signature Verification — trajectory and pressure visualization" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category ml">Machine Learning</div>
+      <div class="project-status research">Research</div>
+    </div>
+    <h3 id="proj-sig-title" class="card-title">Online Signature Verification</h3>
+    <p class="card-text">
+      Biometric authentication project distinguishing genuine from forged signatures 
+      using dynamic features such as pen position, pressure, and angles. Evaluated 
+      multiple classifiers with visual analysis of trajectories and pressure patterns.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">Genuine vs Forged</span><span>Samples</span></div>
+      <div class="metric"><span class="metric-value">6+</span><span>Classifiers</span></div>
+    </div>
+    <ul class="chips">
+      <li>Python</li><li>scikit-learn</li><li>XGBoost</li><li>Matplotlib</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://github.com/Al-RaoushBasel/signature-verification" 
+         target="_blank" rel="noopener noreferrer">View Research</a>
+    </div>
+  </div>
+</article>
+
+<!-- Digit Recognition AI -->
+<article class="card project" aria-labelledby="proj-dr-title">
+  <figure class="card-media">
+    <img src="assets/images/digit-recognition-ai/SS1.png" 
+         alt="Digit Recognition AI — demo interface" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category ml">Machine Learning</div>
+      <div class="project-status live">Live Demo</div>
+    </div>
+    <h3 id="proj-dr-title" class="card-title">Digit Recognition AI</h3>
+    <p class="card-text">
+      Real-time handwritten digit recognition tool built with MobileNetV2. 
+      Uses transfer learning and augmentation for ~95% accuracy with response times under 200ms, 
+      deployed through a Flask API and JavaScript frontend.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">95%</span><span>Accuracy</span></div>
+      <div class="metric"><span class="metric-value">&lt;200ms</span><span>Response Time</span></div>
+    </div>
+    <ul class="chips">
+      <li>TensorFlow/Keras</li><li>Flask</li><li>JavaScript</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://al-raoushbasel.github.io/digit-recognition-frontend/" 
+         target="_blank" rel="noopener noreferrer">Try Demo</a>
+      <a class="btn btn-quiet" href="https://github.com/Al-RaoushBasel/digit-recognition-frontend" 
+         target="_blank" rel="noopener noreferrer">View Code</a>
+    </div>
+  </div>
+</article>
+
+
+<!-- Fake News Detector -->
+<article class="card project" aria-labelledby="proj-fnd-title">
+  <figure class="card-media">
+    <img src="assets/images/fake-news-detector/SS1.png" 
+         alt="Fake News Detector — performance comparison charts" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category ml">Machine Learning</div>
+      <div class="project-status research">Research</div>
+    </div>
+    <h3 id="proj-fnd-title" class="card-title">Fake News Detector</h3>
+    <p class="card-text">
+      NLP study comparing classical ML models and BERT for news classification.
+      Built a clean preprocessing and evaluation pipeline with clear trade-off analysis;
+      BERT achieved the top results.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">5+</span><span>Models Compared</span></div>
+      <div class="metric"><span class="metric-value">BERT</span><span>Top Performer</span></div>
+    </div>
+    <ul class="chips">
+      <li>Python</li><li>scikit-learn</li><li>pandas</li><li>BERT</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://github.com/Al-RaoushBasel/Fake-News-Detector" 
+         target="_blank" rel="noopener noreferrer">View Research</a>
+    </div>
+  </div>
+</article>
+
+<!-- Global Crime Analysis -->
+<article class="card project" aria-labelledby="proj-crime-title">
+  <figure class="card-media">
+    <img src="assets/images/crime-data-analysis/SS1.png" 
+         alt="Global Crime Analysis — interactive world map" 
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category data">Data Analysis</div>
+      <div class="project-status research">Research</div>
+    </div>
+    <h3 id="proj-crime-title" class="card-title">Global Crime Analysis</h3>
+    <p class="card-text">
+      Integrated crime index with population, GDP, education, and unemployment to explore
+      global patterns and correlations. Produced interactive maps, scatter plots, and heatmaps
+      to surface regional insights.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">6+</span><span>Datasets</span></div>
+      <div class="metric"><span class="metric-value">10+</span><span>Visualizations</span></div>
+    </div>
+    <ul class="chips">
+      <li>Python</li><li>pandas</li><li>Matplotlib</li><li>Folium</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://github.com/Al-RaoushBasel/crime-data-analysis" 
+         target="_blank" rel="noopener noreferrer">View Analysis</a>
+    </div>
+  </div>
+</article>
+
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section" aria-labelledby="experience-title">
+  <div class="container" data-reveal>
+    <header class="section-head">
+      <h2 id="experience-title" class="section-title">Experience</h2>
+      <p class="section-sub">Professional roles across banking, freelance, and software development, with measurable impact.</p>
+    </header>
+
+    <div class="timeline">
+
+      <!-- BOJ -->
+      <article class="xp" aria-labelledby="xp-boj">
+        <div class="xp-header">
+          <div class="company-logo" title="Bank of Jordan">
+            <img src="assets/images/bank-of-jordan/logo.png" alt="Bank of Jordan logo" width="60" height="60" loading="lazy" />
+          </div>
+          <div class="xp-time"><time datetime="2025-08">Aug–Sep 2025</time></div>
+        </div>
+        <div class="xp-body">
+          <h3 id="xp-boj" class="xp-title">Software Engineer Intern</h3>
+          <p class="xp-company">Bank of Jordan (Mihnati Program)</p>
+          <div class="xp-meta">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring</span>
+            <span class="tech-tag">Code Reviews</span>
+            <span class="tech-tag">Production</span>
+          </div>
+          <ul class="xp-points">
+            <li>Developed and tested secure banking features with Java/Spring, contributing to two production releases.</li>
+            <li>Performed 100% code reviews and bug fixes, improving stability across two major team projects.</li>
+            <li>Applied enterprise-level practices and financial software standards in daily development workflows.</li>
+          </ul>
+          <div class="xp-achievements">
+            <h4>Key Impact</h4>
+            <div class="achievement-metrics">
+              <div class="achievement-metric">
+                <div class="metric-number">2</div>
+                <div class="metric-label">Projects</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">100%</div>
+                <div class="metric-label">Code Reviews</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">Enterprise</div>
+                <div class="metric-label">Software</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Barber App -->
+      <article class="xp" aria-labelledby="xp-barber">
+        <div class="xp-header">
+          <div class="company-logo placeholder" title="Freelance Project">
+            BARBER
+          </div>
+          <div class="xp-time"><time datetime="2025-07">Jul 2025 – Present</time></div>
+        </div>
+        <div class="xp-body">
+          <h3 id="xp-barber" class="xp-title">Freelance Mobile Developer</h3>
+          <p class="xp-company">Barber Booking App Project</p>
+          <div class="xp-meta">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Riverpod</span>
+            <span class="tech-tag">FCM</span>
+          </div>
+          <ul class="xp-points">
+            <li>Designed and developed a cross-platform booking system with client, barber, and admin roles.</li>
+            <li>Integrated real-time scheduling and push notifications using Firebase and FCM.</li>
+            <li>Implemented Riverpod state management for scalability and maintainability.</li>
+            <li>Improved booking confirmation flow, reducing user wait times by ~40%.</li>
+          </ul>
+          <div class="xp-achievements">
+            <h4>Project Metrics</h4>
+            <div class="achievement-metrics">
+              <div class="achievement-metric">
+                <div class="metric-number">15+</div>
+                <div class="metric-label">Beta Users</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">40%</div>
+                <div class="metric-label">Faster Confirmations</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">3</div>
+                <div class="metric-label">User Roles</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ISD -->
+      <article class="xp" aria-labelledby="xp-inspire">
+        <div class="xp-header">
+          <div class="company-logo" title="Inspire for Solutions Development">
+            <img src="assets/images/inspire/logo.jpeg" alt="Inspire for Solutions Development logo" width="100" height="100" loading="lazy" />
+          </div>
+          <div class="xp-time"><time datetime="2024-08">Aug–Sep 2024</time></div>
+        </div>
+        <div class="xp-body">
+          <h3 id="xp-inspire" class="xp-title">Software Engineer Intern</h3>
+          <p class="xp-company">Inspire for Solutions Development</p>
+          <div class="xp-meta">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Automation</span>
+            <span class="tech-tag">CI/CD</span>
+            <span class="tech-tag">GitHub</span>
+          </div>
+          <ul class="xp-points">
+            <li>Developed Python automation scripts that cut manual data processing time by ~20%.</li>
+            <li>Enhanced GitHub-based CI/CD pipelines to streamline deployment and reduce release cycles.</li>
+            <li>Collaborated with senior developers on process optimization and best practices for workflow efficiency.</li>
+          </ul>
+          <div class="xp-achievements">
+            <h4>Automation Impact</h4>
+            <div class="achievement-metrics">
+              <div class="achievement-metric">
+                <div class="metric-number">20%</div>
+                <div class="metric-label">Faster Processing</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">CI/CD</div>
+                <div class="metric-label">Optimized</div>
+              </div>
+              <div class="achievement-metric">
+                <div class="metric-number">Python</div>
+                <div class="metric-label">Automation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="container" data-reveal>
+    <header class="section-head">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <p class="section-sub">Technologies I use most in real projects.</p>
+    </header>
+
+    <div class="skills card-flat">
+
+      <!-- Languages & Core -->
+      <div class="skill-category">
+        <h3>Languages & Core</h3>
+        <ul class="skills-grid">
+          <li class="skill-card" data-icon="python">Python</li>
+          <li class="skill-card" data-icon="java">Java</li>
+          <li class="skill-card" data-icon="javascript">JavaScript</li>
+          <li class="skill-card" data-icon="dart">Dart</li>
+          <li class="skill-card" data-icon="sql">SQL</li>
+          <li class="skill-card" data-icon="cpp">C++</li>
+        </ul>
+      </div>
+
+      <!-- Mobile & Web -->
+      <div class="skill-category">
+        <h3>Mobile & Web</h3>
+        <ul class="skills-grid">
+          <li class="skill-card" data-icon="flutter">Flutter</li>
+          <li class="skill-card" data-icon="firebase">Firebase</li>
+          <li class="skill-card" data-icon="react">React</li>
+          <li class="skill-card" data-icon="nodejs">Node.js</li>
+          <li class="skill-card" data-icon="flask">Flask</li>
+          <li class="skill-card" data-icon="html5">HTML5</li>
+        </ul>
+      </div>
+
+      <!-- ML / AI -->
+      <div class="skill-category">
+        <h3>ML / AI</h3>
+        <ul class="skills-grid">
+          <li class="skill-card" data-icon="tensorflow">TensorFlow/Keras</li>
+          <li class="skill-card" data-icon="pytorch">PyTorch</li>
+          <li class="skill-card" data-icon="scikitlearn">scikit-learn</li>
+          <li class="skill-card" data-icon="pandas">pandas</li>
+          <li class="skill-card" data-icon="numpy">NumPy</li>
+          <li class="skill-card" data-icon="opencv">OpenCV</li>
+          <li class="skill-card" data-icon="matplotlib">Matplotlib</li>
+          <li class="skill-card" data-icon="bert">BERT</li>
+          <li class="skill-card" data-icon="xgboost">XGBoost</li>
+        </ul>
+      </div>
+
+      <!-- Tools & DevOps -->
+      <div class="skill-category">
+        <h3>Tools & DevOps</h3>
+        <ul class="skills-grid">
+          <li class="skill-card" data-icon="git">Git</li>
+          <li class="skill-card" data-icon="docker">Docker</li>
+          <li class="skill-card" data-icon="postman">Postman</li>
+          <li class="skill-card" data-icon="vscode">VS Code</li>
+          <li class="skill-card" data-icon="colab">Google Colab</li>
+          <li class="skill-card" data-icon="github">GitHub</li>
+          <li class="skill-card" data-icon="linux">Linux</li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="education" class="section" aria-labelledby="edu-title">
+      <div class="container" data-reveal>
+        <header class="section-head">
+          <h2 id="edu-title" class="section-title">Education</h2>
+        </header>
+
+        <article class="edu card-flat">
+          <a href="https://www.bme.hu/en" target="_blank" rel="noopener noreferrer" aria-label="Visit BME University website">
+            <img src="assets/images/bme-logo.png" alt="BME logo" width="96" height="96" loading="lazy" />
+          </a>
+          <div class="edu-body">
+            <h3>BSc in Software Engineering</h3>
+            <p>Budapest University of Technology and Economics (BME) — Expected 2026</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="volunteering" class="section" aria-labelledby="volunteering-title">
+  <div class="container" data-reveal>
+    <header class="section-head">
+      <h2 id="volunteering-title" class="section-title">Volunteering</h2>
+      <p class="section-sub">Community roles and student initiatives I contribute to.</p>
+    </header>
+
+    <div class="cards">
+
+      <!-- TEDxBME IT Team -->
+      <article class="card" aria-labelledby="vol-tedx-title">
+        <figure class="card-media">
+          <!-- Replace src with your photo -->
+          <img src="assets/images/tedx-bme/tedx.jpg" alt="TEDxBME — IT team volunteering" width="1200" height="675" loading="lazy" />
+        </figure>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="project-category">University</div>
+            
+          </div>
+          <h3 id="vol-tedx-title" class="card-title">IT Team Member  TEDxBME</h3>
+          <p class="card-meta">Budapest University of Technology and Economics</p>
+          <p class="card-text">
+            Part of the IT crew supporting event tech, website updates, and backstage infrastructure. 
+            Helped streamline content updates and ensured smooth show-day operations.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-value">Events</span><span>Supported</span></div>
+            <div class="metric"><span class="metric-value">Website</span><span>Maintenance</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Google Developer Student Clubs (GDSC) BME -->
+      <article class="card" aria-labelledby="vol-gdsc-title">
+        <figure class="card-media">
+          <!-- Replace src with your photo -->
+          <img src="assets/images/GDSC/gdsc.png" alt="GDSC BME — tech team volunteering" width="1200" height="675" loading="lazy" />
+        </figure>
+        <div class="card-body">
+          <div class="card-header">
+            <div class="project-category">Student Club</div>
+            
+          </div>
+          <h3 id="vol-gdsc-title" class="card-title">Tech Team  GDSC BME</h3>
+          <p class="card-meta">Google Developer Student Clubs, BME Chapter</p>
+          <p class="card-text">
+            Support workshops and coding sessions; contribute demos in Flutter and ML. 
+            Assist in organizing meetups and helping new members get started.
+          </p>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-value">Workshops</span><span>Assisted</span></div>
+            <div class="metric"><span class="metric-value">Community</span><span>Support</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container" data-reveal>
+        <header class="section-head">
+          <h2 id="contact-title" class="section-title">Contact</h2>
+          <p class="section-sub">Open to collaborations, internships, and feedback.</p>
+        </header>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact card-flat" aria-describedby="formStatus" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </div>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+
+          <div class="links card-flat">
+            <h3>Links</h3>
+            <ul class="link-list">
+              <li><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></li>
+              <li><a href="https://github.com/Al-RaoushBasel" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com/in/basel-al-raoush-72b002291" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="mailto:basel.alraoush15@gmail.com">basel.alraoush15@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Basel Al-Raoush. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const navToggle = document.getElementById('navToggle');
+    const menu = document.getElementById('primary-navigation');
+    if (navToggle && menu) {
+      const toggle = () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('show');
       };
+      navToggle.addEventListener('click', toggle);
+    }
 
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+    const back = document.getElementById('backToTop');
+    const onScroll = () => {
+      back.hidden = (window.scrollY || document.documentElement.scrollTop) < 140;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    back.addEventListener('click', () => {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+    onScroll();
+
+    const form = document.getElementById('contactForm');
+    const statusEl = document.getElementById('formStatus');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        const name = (data.get('name') || '').toString().trim();
+        const email = (data.get('email') || '').toString().trim();
+        const message = (data.get('message') || '').toString().trim();
+        if (!name || !email || !message) {
+          statusEl.textContent = 'Please fill in all fields.';
+          return;
+        }
+        statusEl.textContent = 'Thanks! Your message is prepared. (Connect EmailJS/server to send.)';
+        form.reset();
+      });
+    }
+
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add('reveal-in');
+          io.unobserve(e.target);
+        }
       }
-    </script>
-  </body>
+    }, { threshold: 0.14 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+</body>
 </html>
