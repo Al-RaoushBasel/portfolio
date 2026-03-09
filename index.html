@@ -91,12 +91,75 @@
   <div class="container" data-reveal>
     <header class="section-head">
       <h2 id="work-title" class="section-title">Featured Work</h2>
-      <p class="section-sub">Projects across mobile, ML, and data — built with a focus on impact and reliability.</p>
+      <p class="section-sub">Projects across full-stack, mobile, ML, and data — built with a focus on impact and reliability.</p>
     </header>
 
     <div class="cards">
 
 
+
+
+<!-- SentimentTrader -->
+<article class="card project" aria-labelledby="proj-sentimenttrader-title">
+  <figure class="card-media">
+    <img src="assets/images/sentiment-trader/SS1.png"
+         alt="SentimentTrader — AI-powered paper trading dashboard"
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category fullstack">Full Stack</div>
+      <div class="project-status live">Live</div>
+    </div>
+    <h3 id="proj-sentimenttrader-title" class="card-title">SentimentTrader</h3>
+    <p class="card-text">
+      AI-powered paper trading platform with $100K virtual balance and live market data
+      via Finnhub WebSocket. FinBERT analyzes financial news sentiment (bullish/bearish).
+      Includes pessimistic locking, idempotency keys, circuit breakers, and JWT auth with refresh tokens.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">$100K</span><span>Virtual Balance</span></div>
+      <div class="metric"><span class="metric-value">FinBERT</span><span>Sentiment Analysis</span></div>
+    </div>
+    <ul class="chips" aria-label="Tech stack">
+      <li>React</li><li>Spring Boot</li><li>Python</li><li>FinBERT</li><li>PostgreSQL</li><li>Docker</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn" href="https://github.com/Al-RaoushBasel/ai-sentiment-trader" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</article>
+
+
+<!-- Property Management System -->
+<article class="card project" aria-labelledby="proj-property-title">
+  <figure class="card-media">
+    <img src="assets/images/property-management/SS1.png"
+         alt="Property Management System — tenant portal dashboard"
+         width="1200" height="675" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category fullstack">Full Stack</div>
+      <div class="project-status live">Live Demo</div>
+    </div>
+    <h3 id="proj-property-title" class="card-title">Property Management System</h3>
+    <p class="card-text">
+      Full-stack app with tenant portals, lease tracking, and payments.
+      Used Redux for real-time data updates across admin dashboards.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">Tenant</span><span>Portals</span></div>
+      <div class="metric"><span class="metric-value">Real-time</span><span>Data Updates</span></div>
+    </div>
+    <ul class="chips" aria-label="Tech stack">
+      <li>React</li><li>Node.js</li><li>MongoDB</li><li>Redux</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn" href="https://property-manager-cyan.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+    </div>
+  </div>
+</article>
 
 
 <!-- Barber Booking App -->
@@ -300,10 +363,35 @@
   <div class="container" data-reveal>
     <header class="section-head">
       <h2 id="experience-title" class="section-title">Experience</h2>
-      <p class="section-sub">Professional roles across banking, freelance, and software development, with measurable impact.</p>
+      <p class="section-sub">Professional roles across enterprise software, banking, freelance, and software development.</p>
     </header>
 
     <div class="timeline">
+
+      <!-- ABBYY -->
+      <article class="xp" aria-labelledby="xp-abbyy">
+        <div class="xp-header">
+          <div class="company-logo" title="ABBYY">
+            <img src="assets/images/abbyy/abbyy-logo.png" alt="ABBYY logo" width="60" height="60" loading="lazy" />
+          </div>
+          <div class="xp-time"><time datetime="2025-03">Mar–Dec 2025</time></div>
+        </div>
+        <div class="xp-body">
+          <h3 id="xp-abbyy" class="xp-title">Student Software Engineer</h3>
+          <p class="xp-company">ABBYY — Budapest, Hungary</p>
+          <div class="xp-meta">
+            <span class="tech-tag">OCR</span>
+            <span class="tech-tag">Enterprise</span>
+            <span class="tech-tag">Code Reviews</span>
+            <span class="tech-tag">Cross-team</span>
+          </div>
+          <ul class="xp-points">
+            <li>Worked on the ABBYY FlexiCapture enterprise document capture and processing platform.</li>
+            <li>Debugged encoding and parsing issues in the OCR pipeline, including a client-reported bug traced to an encoding mismatch.</li>
+            <li>Navigated a large, mature codebase through code reviews and cross-team collaboration.</li>
+          </ul>
+        </div>
+      </article>
 
       <!-- BOJ -->
       <article class="xp" aria-labelledby="xp-boj">
@@ -311,7 +399,7 @@
           <div class="company-logo" title="Bank of Jordan">
             <img src="assets/images/bank-of-jordan/logo.png" alt="Bank of Jordan logo" width="60" height="60" loading="lazy" />
           </div>
-          <div class="xp-time"><time datetime="2025-08">Aug–Sep 2025</time></div>
+          <div class="xp-time"><time datetime="2025-01">Jan–Feb 2025</time></div>
         </div>
         <div class="xp-body">
           <h3 id="xp-boj" class="xp-title">Software Engineer Intern</h3>
@@ -323,27 +411,9 @@
             <span class="tech-tag">Production</span>
           </div>
           <ul class="xp-points">
-            <li>Developed and tested secure banking features with Java/Spring, contributing to two production releases.</li>
-            <li>Performed 100% code reviews and bug fixes, improving stability across two major team projects.</li>
-            <li>Applied enterprise-level practices and financial software standards in daily development workflows.</li>
+            <li>Wrote and tested Java/Spring features that went into production.</li>
+            <li>Fixed bugs across 2 microservices and wrote JUnit tests to maintain team coverage standards.</li>
           </ul>
-          <div class="xp-achievements">
-            <h4>Key Impact</h4>
-            <div class="achievement-metrics">
-              <div class="achievement-metric">
-                <div class="metric-number">2</div>
-                <div class="metric-label">Projects</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">100%</div>
-                <div class="metric-label">Code Reviews</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">Enterprise</div>
-                <div class="metric-label">Software</div>
-              </div>
-            </div>
-          </div>
         </div>
       </article>
 
@@ -353,7 +423,7 @@
           <div class="company-logo placeholder" title="Freelance Project">
             BARBER
           </div>
-          <div class="xp-time"><time datetime="2025-07">Jul 2025 – Present</time></div>
+          <div class="xp-time"><time datetime="2025-07">Freelance</time></div>
         </div>
         <div class="xp-body">
           <h3 id="xp-barber" class="xp-title">Freelance Mobile Developer</h3>
@@ -365,28 +435,10 @@
             <span class="tech-tag">FCM</span>
           </div>
           <ul class="xp-points">
-            <li>Designed and developed a cross-platform booking system with client, barber, and admin roles.</li>
-            <li>Integrated real-time scheduling and push notifications using Firebase and FCM.</li>
-            <li>Implemented Riverpod state management for scalability and maintainability.</li>
-            <li>Improved booking confirmation flow, reducing user wait times by ~40%.</li>
+            <li>Built a Flutter + Firebase app with role-based access for 3 user types.</li>
+            <li>Set up Riverpod for state and Firebase Cloud Messaging for push notifications.</li>
+            <li>Shipped a beta with 10+ features including live sync, auth, and booking management.</li>
           </ul>
-          <div class="xp-achievements">
-            <h4>Project Metrics</h4>
-            <div class="achievement-metrics">
-              <div class="achievement-metric">
-                <div class="metric-number">15+</div>
-                <div class="metric-label">Beta Users</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">40%</div>
-                <div class="metric-label">Faster Confirmations</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">3</div>
-                <div class="metric-label">User Roles</div>
-              </div>
-            </div>
-          </div>
         </div>
       </article>
 
@@ -402,33 +454,16 @@
           <h3 id="xp-inspire" class="xp-title">Software Engineer Intern</h3>
           <p class="xp-company">Inspire for Solutions Development</p>
           <div class="xp-meta">
+            <span class="tech-tag">React.js</span>
             <span class="tech-tag">Python</span>
-            <span class="tech-tag">Automation</span>
             <span class="tech-tag">CI/CD</span>
-            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">GitHub Actions</span>
           </div>
           <ul class="xp-points">
-            <li>Developed Python automation scripts that cut manual data processing time by ~20%.</li>
-            <li>Enhanced GitHub-based CI/CD pipelines to streamline deployment and reduce release cycles.</li>
-            <li>Collaborated with senior developers on process optimization and best practices for workflow efficiency.</li>
+            <li>Built React.js UI components following the bank's design guidelines.</li>
+            <li>Wrote Python scripts to automate repetitive data processing tasks for the team.</li>
+            <li>Helped configure GitHub Actions + Jenkins CI/CD pipelines for smoother deployments.</li>
           </ul>
-          <div class="xp-achievements">
-            <h4>Automation Impact</h4>
-            <div class="achievement-metrics">
-              <div class="achievement-metric">
-                <div class="metric-number">20%</div>
-                <div class="metric-label">Faster Processing</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">CI/CD</div>
-                <div class="metric-label">Optimized</div>
-              </div>
-              <div class="achievement-metric">
-                <div class="metric-number">Python</div>
-                <div class="metric-label">Automation</div>
-              </div>
-            </div>
-          </div>
         </div>
       </article>
 
@@ -519,7 +554,7 @@
             <img src="assets/images/bme-logo.png" alt="BME logo" width="96" height="96" loading="lazy" />
           </a>
           <div class="edu-body">
-            <h3>BSc in Software Engineering</h3>
+            <h3>BSc in Computer Engineering</h3>
             <p>Budapest University of Technology and Economics (BME) — Expected 2026</p>
           </div>
         </article>
@@ -550,8 +585,8 @@
           <h3 id="vol-tedx-title" class="card-title">IT Team Member  TEDxBME</h3>
           <p class="card-meta">Budapest University of Technology and Economics</p>
           <p class="card-text">
-            Part of the IT crew supporting event tech, website updates, and backstage infrastructure. 
-            Helped streamline content updates and ensured smooth show-day operations.
+            Set up and maintained the official event website using WordPress.
+            Supported event tech and ensured smooth show-day operations.
           </p>
           <div class="project-metrics">
             <div class="metric"><span class="metric-value">Events</span><span>Supported</span></div>
@@ -574,8 +609,8 @@
           <h3 id="vol-gdsc-title" class="card-title">Tech Team  GDSC BME</h3>
           <p class="card-meta">Google Developer Student Clubs, BME Chapter</p>
           <p class="card-text">
-            Support workshops and coding sessions; contribute demos in Flutter and ML. 
-            Assist in organizing meetups and helping new members get started.
+            Built a Discord bot and a web analytics tool using TypeScript and Cloudflare Workers.
+            Supported workshops, coding sessions, and helped organize meetups.
           </p>
           <div class="project-metrics">
             <div class="metric"><span class="metric-value">Workshops</span><span>Assisted</span></div>
@@ -597,7 +632,7 @@
         </header>
 
         <div class="contact-grid">
-          <form id="contactForm" class="contact card-flat" aria-describedby="formStatus" novalidate>
+          <form id="contactForm" class="contact card-flat" action="https://formspree.io/f/xyknknoj" method="POST" aria-describedby="formStatus">
             <div class="form-group">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -664,7 +699,7 @@
     const form = document.getElementById('contactForm');
     const statusEl = document.getElementById('formStatus');
     if (form) {
-      form.addEventListener('submit', (e) => {
+      form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const data = new FormData(form);
         const name = (data.get('name') || '').toString().trim();
@@ -674,8 +709,22 @@
           statusEl.textContent = 'Please fill in all fields.';
           return;
         }
-        statusEl.textContent = 'Thanks! Your message is prepared. (Connect EmailJS/server to send.)';
-        form.reset();
+        statusEl.textContent = 'Sending...';
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            statusEl.textContent = 'Message sent! I\'ll get back to you soon.';
+            form.reset();
+          } else {
+            statusEl.textContent = 'Something went wrong. Please try again.';
+          }
+        } catch {
+          statusEl.textContent = 'Network error. Please try again.';
+        }
       });
     }
 
