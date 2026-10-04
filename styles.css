@@ -687,6 +687,13 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card[data-icon="postman"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg'); }
 .skill-card[data-icon="vscode"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg'); }
 .skill-card[data-icon="colab"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecolab/googlecolab-original.svg'); }
+.skill-card[data-icon="typescript"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'); }
+.skill-card[data-icon="kotlin"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'); }
+.skill-card[data-icon="spring"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'); }
+.skill-card[data-icon="githubactions"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg'); }
+.skill-card[data-icon="jenkins"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg'); }
+.skill-card[data-icon="postgresql"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'); }
+.skill-card[data-icon="mongodb"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'); }
 .skill-card[data-icon="github"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'); }
 .skill-card[data-icon="linux"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'); }
 
