@@ -619,7 +619,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   list-style: none;
   margin: 0;
@@ -640,6 +640,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
   color: var(--text-color);
   min-height: 104px;
+}
+
+/* Each group holds 8 skills, so 8, 4 or 2 per row keeps every row full */
+@media (min-width: 1100px) {
+  .skills-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); }
 }
 
 /* Tech Icons */
@@ -665,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card[data-icon="java"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'); }
 .skill-card[data-icon="javascript"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'); }
 .skill-card[data-icon="dart"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg'); }
-.skill-card[data-icon="sql"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'); }
+.skill-card[data-icon="sql"]::after { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjMkY3NEMwIi8+PHRleHQgeD0iMjAiIHk9IjI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSI+U1FMPC90ZXh0Pjwvc3ZnPg=='); }
 .skill-card[data-icon="cpp"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'); }
 .skill-card[data-icon="flutter"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg'); }
 .skill-card[data-icon="firebase"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg'); }
@@ -673,14 +678,18 @@ h1, h2, h3, h4, h5, h6 {
 .skill-card[data-icon="nodejs"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'); }
 .skill-card[data-icon="flask"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg'); }
 .skill-card[data-icon="html5"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'); }
+.skill-card[data-icon="css3"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'); }
 .skill-card[data-icon="tensorflow"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'); }
 .skill-card[data-icon="pytorch"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg'); }
-.skill-card[data-icon="scikitlearn"]::after { background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg'); }
+.skill-card[data-icon="huggingface"]::after { background-image: url('https://huggingface.co/front/assets/huggingface_logo-noborder.svg'); }
+.skill-card[data-icon="scikitlearn"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg'); }
 .skill-card[data-icon="pandas"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'); }
+/* Dark logos get a light tile so they stay visible on the dark cards */
+.skill-card[data-icon="pandas"]::after { background-color: #f1f3f5; border-radius: 8px; padding: 5px; background-origin: content-box; background-clip: border-box; box-sizing: border-box; }
 .skill-card[data-icon="numpy"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg'); }
 .skill-card[data-icon="opencv"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg'); }
 .skill-card[data-icon="matplotlib"]::after { background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg'); }
-.skill-card[data-icon="bert"]::after { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzU4YTZmZiIvPgo8dGV4dCB4PSI1IiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkJFUlQ8L3RleHQ+Cjwvc3ZnPgo='); }
+.skill-card[data-icon="bert"]::after { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjNThhNmZmIi8+PHRleHQgeD0iMjAiIHk9IjI0LjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5CRVJUPC90ZXh0Pjwvc3ZnPg=='); }
 .skill-card[data-icon="xgboost"]::after { background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iIzM0Yzc1OSIvPgo8dGV4dCB4PSIzIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlhHQjwvdGV4dD4KPC9zdmc+Cg=='); }
 .skill-card[data-icon="git"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'); }
 .skill-card[data-icon="docker"]::after { background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg'); }
@@ -1286,7 +1295,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.75rem;
   }
 
@@ -1315,6 +1324,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Small mobile devices */
 @media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   :root {
     --section-padding: 2rem 1rem;
   }
