@@ -100,6 +100,70 @@
     <div class="cards">
 
 
+<!-- FixMyPrompt -->
+<article class="card project" aria-labelledby="proj-fixmyprompt-title">
+  <figure class="card-media">
+    <img src="assets/images/fixmyprompt/SS1.png"
+         alt="FixMyPrompt landing page: one-click prompt rewriting inside ChatGPT, Claude, Gemini and other AI chats"
+         width="1440" height="900" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category fullstack">Full Stack</div>
+      <div class="project-status live">Live on Chrome Web Store</div>
+    </div>
+    <h3 id="proj-fixmyprompt-title" class="card-title">FixMyPrompt</h3>
+    <p class="card-text">
+      Chrome extension that adds a Fix Prompt button inside 9 AI chat sites (ChatGPT, Claude, Gemini and more)
+      and rewrites prompts in 11 styles with OpenAI. Next.js backend with Supabase auth,
+      Stripe subscriptions and Redis rate limiting.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">9</span><span>AI Chat Sites</span></div>
+      <div class="metric"><span class="metric-value">11</span><span>Rewrite Styles</span></div>
+    </div>
+    <ul class="chips" translate="no" aria-label="Tech stack">
+      <li>Chrome Extension</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Stripe</li><li>OpenAI</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://fixmyprompt.org/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+      <a class="btn btn-quiet" href="https://chromewebstore.google.com/detail/fixmyprompt/cjgidbgikjngfljjnpkbndolbgpafpoc"
+         target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
+    </div>
+  </div>
+</article>
+
+
+<!-- PhysioAI (freelance client work; the client is not named) -->
+<article class="card project" aria-labelledby="proj-physio-title">
+  <figure class="card-media">
+    <img src="assets/images/physio-ai/SS1.png"
+         alt="PhysioAI landing page: speak or type session notes and AI drafts the clinical report"
+         width="1440" height="900" loading="lazy" />
+  </figure>
+  <div class="card-body">
+    <div class="card-header">
+      <div class="project-category ml">AI · Client Project</div>
+      <div class="project-status live">Live Demo</div>
+    </div>
+    <h3 id="proj-physio-title" class="card-title">PhysioAI</h3>
+    <p class="card-text">
+      Clinical notes app built for a physiotherapy client. The clinician records the session, Whisper transcribes it,
+      a validation step flags missing clinical details, and GPT-4o drafts an editable SOAP report and treatment plan
+      with PDF export.
+    </p>
+    <div class="project-metrics">
+      <div class="metric"><span class="metric-value">Whisper</span><span>Speech to Text</span></div>
+      <div class="metric"><span class="metric-value">GPT-4o</span><span>Report Drafts</span></div>
+    </div>
+    <ul class="chips" translate="no" aria-label="Tech stack">
+      <li>Next.js</li><li>React</li><li>TypeScript</li><li>OpenAI Whisper</li><li>GPT-4o</li><li>Tailwind</li>
+    </ul>
+    <div class="card-ctas">
+      <a class="btn btn-primary" href="https://physio-ai-one.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+    </div>
+  </div>
+</article>
 
 
 <!-- SentimentTrader -->
@@ -372,6 +436,30 @@
     </header>
 
     <div class="timeline">
+
+      <!-- PhysioAI (freelance; the client is not named) -->
+      <article class="xp" aria-labelledby="xp-physio">
+        <div class="xp-header">
+          <div class="company-logo placeholder" aria-hidden="true">
+            PHYSIO
+          </div>
+          <div class="xp-time"><time datetime="2026-02">Feb–May 2026</time></div>
+        </div>
+        <div class="xp-body">
+          <h3 id="xp-physio" class="xp-title">Freelance Software Developer</h3>
+          <p class="xp-company">PhysioAI (physiotherapy client), remote</p>
+          <div class="xp-meta" translate="no">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">Whisper</span>
+          </div>
+          <ul class="xp-points">
+            <li>Built an AI clinical-notes app (Next.js, TypeScript): Whisper transcribes session audio and GPT-4o drafts SOAP reports and treatment plans, exported as PDF.</li>
+            <li>After client feedback, added a validation step that flags missing clinical information and blocks invented data.</li>
+          </ul>
+        </div>
+      </article>
 
       <!-- ABBYY -->
       <article class="xp" aria-labelledby="xp-abbyy">
